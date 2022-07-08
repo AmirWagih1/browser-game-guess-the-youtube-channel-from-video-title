@@ -1,1 +1,1 @@
-# browser-game-guess-the-youtube-channel-from-video-title
+# Browser Game : Guess the youtube channel from video title
