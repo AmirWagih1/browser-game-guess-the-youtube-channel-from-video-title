@@ -2,7 +2,7 @@
 
 ##  Quick summary
 it's a little project I worked on using **Youtube API V3**. Just try to guess the youtuber/youtube channel based on their video title
-## Programming Languages and Frameworks/Libaries used 
+## Programming Languages and Frameworks/Libraries used 
 - HTNL
 - CSS
 - JS
