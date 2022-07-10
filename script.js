@@ -31,18 +31,21 @@
 
 
     url = `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&key=${api_key}&maxResults=${max_results}`
+    var cat_link = ""
     //Get Location
     if (region == "") {
       var lo = await fetch("https://ipinfo.io?token=7d327ed3e58d01")
       lo = await lo.json()
       // console.log(lo);
       url = url + `&regionCode=${lo.country}`
+      cat_link = `https://www.googleapis.com/youtube/v3/videoCategories?part=snippet&regionCode=${lo.country}&key=${api_key}`
     } else {
       url = url + `&regionCode=${region}`
+      cat_link = `https://www.googleapis.com/youtube/v3/videoCategories?part=snippet&regionCode=${region}&key=${api_key}`
     }
     //Get categories
     var cats_list = []
-    var cats = await fetch(`https://www.googleapis.com/youtube/v3/videoCategories?part=snippet&regionCode=${lo.country}&key=${api_key}`)
+    var cats = await fetch(cat_link)
     cats = await cats.json()
     // console.log(cats);
     cats_l = ""
