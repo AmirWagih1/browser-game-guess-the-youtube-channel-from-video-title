@@ -291,8 +291,5 @@
   }
 
   // Start game
-  try {
-    main()
-  } catch (err) {
-    endErr(err)
-  }
+    main().catch((err) => endErr(err))
+
