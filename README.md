@@ -23,4 +23,4 @@ If you are using the **console**, use `main().catch(() => endErr())` for any cha
 - The game automatically detects your **region** Using **ipinfo.io** API **if no `region` value was provided** (To disable this feature, just provide a value to `region` variable)
 - The game automatically hides the youtube channel name if found in **video title**
 ## How to use
-Just open `index.html` in `src`
+Just open `index.html`
