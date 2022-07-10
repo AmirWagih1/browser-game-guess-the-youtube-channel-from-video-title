@@ -291,4 +291,4 @@
   }
 
   // Start game
-  main().catch((err) => endErr(err))
+  main()
