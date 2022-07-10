@@ -137,9 +137,8 @@
         $("#total_score").html(`<b>Total Score:</b> ${wins}/${total} or ${Math.round(wins*100/total)}%`)
         $("#total_score").css({display: "inline-block"})
       }
-    } catch {
-        alert("An Error Occured, Please try again later")
-        endErr()
+    } catch(err) {
+        endErr(err)
     }
 
 
