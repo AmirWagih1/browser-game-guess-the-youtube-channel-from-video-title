@@ -276,9 +276,9 @@
     return Math.floor((max - min) * Math.random() + min)
   }
 
-  function endErr() {
+  function endErr(err) {
     alert("An Error Occured: Please try again later!")
-    $("body").text("An Error Occured: Please try again later!")
+    $("body").text(err)
   }
 
   function filterDublicates(arr) {
@@ -294,4 +294,4 @@
   }
 
   // Start game
-  main().catch(() => endErr())
+  main().catch((err) => endErr(err))
