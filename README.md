@@ -18,7 +18,7 @@ it's a little project I worked on using **Youtube API V3**. Just try to guess th
 | **cats_allowed** | Array of Video Categories to fetch videos from,  You may wanna use [VideoCategories: list ](https://developers.google.com/youtube/v3/docs/videoCategories/list) for the list of categories available in your country | 
 |  **same_cats** | If `true` Options to choose answer from are fetched only from the same category as the correct answer   |
 
-If you are using the **console**, use `main().catch(() => endErr())` for any changes in the mentioned variables to **take effect**, Otherwise just refresh the page
+If you are using the **console**, use `main().catch((err) => endErr(err))` for any changes in the mentioned variables to **take effect**, Otherwise just refresh the page
 ## Internal Features
 - The game automatically detects your **region** Using **ipinfo.io** API **if no `region` value was provided** (To disable this feature, just provide a value to `region` variable)
 - The game automatically hides the youtube channel name if found in **video title**
