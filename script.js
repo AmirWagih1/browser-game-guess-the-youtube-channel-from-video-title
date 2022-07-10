@@ -291,4 +291,8 @@
   }
 
   // Start game
-  main()
+  try {
+    main()
+  } catch (err) {
+    endErr(err)
+  }
