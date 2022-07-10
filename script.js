@@ -83,9 +83,9 @@
 
     //setup random list
     l = [...Array(data.length).keys()]
-    ld = structuredClone(l)
+    ld = l.slice()
 
-    utilize().catch((err) => endErr(err))
+    utilize()
     $(".container").attr("id", "")
     $("#load").css("display", "none")
 
@@ -96,7 +96,7 @@
 
     //filter dublicates
     //played = filterDublicates(played);
-    
+
       if (l.length > 0) {
 
         var randomNum = l[randomize(0, l.length - 1)];
@@ -137,6 +137,7 @@
         $("#total_score").html(`<b>Total Score:</b> ${wins}/${total} or ${Math.round(wins*100/total)}%`)
         $("#total_score").css({display: "inline-block"})
       }
+
 
 
   }
